@@ -1,0 +1,134 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    background-color: royalblue;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+}
+
+#logo {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.one {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 600px;
+    width: 100%;
+}
+
+.flight {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.flightimg ,
+.flightimg2,
+.flightimg3,
+.flightimg4{
+    flex: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+}
+
+.flightimg{
+    background-image: url('https://www.newbusinessage.com/img/news/20220417083329_Nepal-Airlines-NAC.jpg')  
+}
+
+.flightimg2{
+    background-image: url('https://assets-cdn.kathmandupost.com/uploads/source/news/2019/money/A320-(1).jpg');
+}
+
+.flightimg3{
+    background-image: url('https://i0.wp.com/techlekh.com/wp-content/uploads/2018/02/boeing-buddha-air.jpg?fit=1000%2C563&ssl=1');
+}
+
+.flightimg4{
+    background-image: url('https://cdn.zeebiz.com/sites/default/files/2023/08/19/256870-air-india-reuters.jpg');
+}
+
+.flightbutton {
+    padding: 10px;
+    text-align: center;
+}
+
+.b1 {
+    width: 163px;
+    border: 2px solid white;
+    background: rgb(82, 82, 241);
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+    height: 60px;
+}
+.b1 a {
+    text-decoration: none;
+    color: white;
+}
+.flightbutton {
+    background: grey;
+    height: 90px;
+}
+#cont {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    
+}
+
+#cont p {
+    color: #333;
+    font-size: 13px;
+    line-height: 1.6;
+
+}
+
+#cont .highlight {
+    color: blue;
+    font-weight: bold;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ft1 {
+    text-align: left;
+}
+.ft3 ul {
+    list-style-type: none; 
+}
+.ft3 li {
+    margin-bottom: 5px;
+}

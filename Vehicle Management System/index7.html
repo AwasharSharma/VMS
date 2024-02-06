@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        header {
+            background-color: royalblue;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1%;
+        }
+
+        #logo {
+            margin: 0;
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin-left: 20px;
+            font-size: 20px;
+        }
+
+        .background {
+            background-image: url('https://www.shutterstock.com/shutterstock/videos/1094485061/thumb/11.jpg?ip=x480');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .booking-form {
+            background-color: darkgrey;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .booking-form h2 {
+            text-align: center;
+        }
+
+        .booking-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .booking-form input,
+        .booking-form select {
+            padding: 8px;
+            border: 1px solid white;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .booking-form button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .ft1 {
+            text-align: left;
+        }
+        .ft3 ul {
+            list-style-type: none; 
+        }
+        .ft3 li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <p id="logo">TourTrekker</p>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="index2.html">Flights</a>
+                <a href="index3.html">Bus</a>
+                <a href="index4.html">Hotels</a>
+                <a href="index5.html">Contact us!</a>
+            </nav>
+        </div>
+    </header>
+    <div class="background">
+        <div class="booking-form">
+            <h2>Bus Booking Form</h2>
+            <form onsubmit="bookbus()">
+                Name:<input type="text" id="name" name="name" required>
+                Email: <input type="email" id="email" name="email" required>
+                Departing (From): <input type="text" id="departing" name="departing" required>
+                Arrival (To):<input type="text" id="arrival" name="arrival" required>
+                Date:<input type="date" id="date" name="date" required>
+                No of passengers:<input type="text" id="pass" required>
+                Bus:
+                    <select id="plane">
+                        <option>Single-deck rigid bus</option>
+                        <option>Articulated Bus</option>
+                        <option>Hybrid Bus</option>
+                        <option>Tour Bus</option>
+                    </select>
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="ft1">
+            <h3>Contact Us:</h3>
+            <table>
+                <tr>
+                    <td style="color: white;">Facebook</td>
+                    <td><img width="28" height="28" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new"/></td>
+                </tr>
+                <tr>
+                    <td style="color: white;">Twitter</td>
+                    <td><img width="28" height="28" src="https://img.icons8.com/color/48/twitter--v1.png" alt="twitter--v1"/></td>
+                </tr>
+                <tr >
+                    <td style="color: white;">Instagram</td>
+                    <td><img width="28" height="28" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1"/></i></td>
+                </tr>
+                <tr>
+                    <td style="color: white;">Tiktok</td>
+                    <td><img width="28" height="28" src="https://img.icons8.com/color/48/tiktok--v1.png" alt="tiktok--v1"/></td>
+                </tr>
+                <tr>
+                    <td style="color: white;">Viber</td>
+                    <td><img width="28" height="28" src="https://img.icons8.com/color/48/viber.png" alt="viber"/></td>
+                </tr>
+            </table>
+        </div>
+    
+        <div class="ft2">
+            <h3>
+            &copy VehiSync Squad "All Rights Reserved"
+            </h3>
+        </div>
+        
+    
+        <div class="ft3">
+            <h3>Developers:</h3>
+            <ul>
+                <li>Awashar Sharma</li>
+                <li>Dikshit Guragain</li>
+                <li>Bigyan Pokhrel</li>
+                <li>Benisha Bhandari</li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        function bookbus() {
+            var name = document.getElementById('Name').value;
+            var email = document.getElementById('email').value;
+            var bus = document.getElementById('bus').value;
+    
+            
+                alert('Bus booked for ' + name + ' with email ' + email + ' on ' + bus);
+            
+        }
+    </script>
+    
+    
+</body>
+
+</html>

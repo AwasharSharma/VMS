@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        header {
+            background-color: royalblue;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1%;
+        }
+
+        #logo {
+            margin: 0;
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin-left: 20px;
+            font-size: 20px;
+        }
+
+        .background {
+            background-image: url('https://www.cityhotelssofia.org/data/Imgs/OriginalPhoto/13971/1397102/1397102942/img-anel-hotel-sofia-4.JPEG');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .booking-form {
+            background-color: darkgrey;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .booking-form h2 {
+            text-align: center;
+        }
+
+        .booking-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .booking-form input,
+        .booking-form select {
+            padding: 8px;
+            border: 1px solid white;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .booking-form button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .ft1 {
+            text-align: left;
+        }
+        .ft3 ul {
+            list-style-type: none; 
+        }
+        .ft3 li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <p id="logo">TourTrekker</p>
+            <nav>
+                <a href='/'>Home</a>
+                <a href='/index2'>Flights</a>
+                <a href='/index3'>Bus</a>
+                <a href='/index4'>Hotels</a>
+                <a href='/index5'>Contact us!</a>
+            </nav>
+        </div>
+    </header>
+    <div class="background">
+        <div class="booking-form">
+            <h2>Hotel Booking Form</h2>
+            <form onsubmit="bookhotel()">
+                Name:<input type="text" id="name" name="name" required>
+                Email: <input type="email" id="email" name="email" required>
+                Check-in Date:<input type="date" id="checkin-date" name="checkin" required>
+                Check-out Date:<input type="date" id="checkout-date" name="checkout" required>
+                No of Room:<input type="text" id="room" required>
+                Hotel Type:
+                    <select id="hotel">
+                        <option>Resorts</option>
+                        <option>Floating Hotel</option>
+                        <option>4 star Hotel</option>
+                        <option>Boatels</option>
+                        <option>Rotels</option>
+                        <option>5 Star Hotel</option>
+                    </select>
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="ft1">
+            <h3>Contact Us:</h3>
+            <table>
+                <tr>
+                    <td style="color: white;">Facebook</td>
+                    <td><img width="28" height="28" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new"/></td>
+                </tr>
+                <tr>
+                    <td style="color: white;">Twitter</td>
+                    <td><img width="28" height="28" src="https://img.icons8.com/color/48/twitter--v1.png" alt="twitter--v1"/></td>
+                </tr>
+                <tr >
+                    <td style="color: white;">Instagram</td>
+                    <td><img width="28" height="28" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1"/></i></td>
+                </tr>
+                <tr>
+                    <td style="color: white;">Tiktok</td>
+                    <td><img width="28" height="28" src="https://img.icons8.com/color/48/tiktok--v1.png" alt="tiktok--v1"/></td>
+                </tr>
+                <tr>
+                    <td style="color: white;">Viber</td>
+                    <td><img width="28" height="28" src="https://img.icons8.com/color/48/viber.png" alt="viber"/></td>
+                </tr>
+            </table>
+        </div>
+    
+        <div class="ft2">
+            <h3>
+            &copy VehiSync Squad "All Rights Reserved"
+            </h3>
+        </div>
+        
+    
+        <div class="ft3">
+            <h3>Developers:</h3>
+            <ul>
+                <li>Awashar Sharma</li>
+                <li>Dikshit Guragain</li>
+                <li>Bigyan Pokhrel</li>
+                <li>Benisha Bhandari</li>
+            </ul>
+        </div>
+    </footer>
+   
+    <script>
+    function bookhotel() {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var hotel = document.getElementById('hotel').value;
+
+        alert('Hotel booked for ' + name + ' with email ' + email + ' on ' + hotel);
+    }
+</script>
+
+    
+    
+    
+</body>
+
+</html>

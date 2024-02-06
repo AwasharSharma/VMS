@@ -1,0 +1,155 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    background-color: royalblue;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+}
+
+#logo {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.one {
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+    width: 100%;
+}
+
+.hotels {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.hotelimg,
+.hotelimg2,
+.hotelimg3,
+.hotelimg4,
+.hotelimg5,
+.hotelimg6
+{
+    flex: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+}
+
+.hotelimg{
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/312/978/397/travel-tourism-sea-water-wallpaper-preview.jpg')  
+}
+
+.hotelimg2{
+    background-image: url('https://media.cnn.com/api/v1/images/stellar/prod/211110114521-08-floating-hotel-gallery-11092021.jpg?q=w_2704,h_1521,x_0,y_0,c_fill')
+ }
+
+.hotelimg3{
+    background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/0b/f6/89/exterior.jpg?w=1200&h=-1&s=1');
+}
+
+.hotelimg4{
+    background-image: url('https://allseasonshouseboats.com.au/wp-content/uploads/2014/08/Emerald-Luxury-15.jpg');
+}
+.hotelimg5{
+    background-image: url('https://live.staticflickr.com/3829/9423091326_b56653ee50_b.jpg');
+
+}
+.hotelimg6{
+     background-image: url('https://news.artnet.com/app/news-upload/2019/08/20190320_HSH_Pen_Art1278_v3_M-1024x902.jpg');
+}
+
+.hotelbutton {
+    padding: 10px;
+    text-align: center;
+    background: grey;
+    height: 90px;
+}
+
+.b1 {
+    width: 163px;
+    border: 2px solid white;
+    background: rgb(82, 82, 241);
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+    height: 60px;
+}
+.b1 a {
+    text-decoration: none;
+    color: white;
+}
+#services {
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+}
+
+#services h2 {
+    color: red;
+}
+
+.service {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.service-item {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.service-item h3 {
+    color: #333;
+}
+
+.service-item p {
+    margin-top: 10px;
+    color: #666;
+}
+ footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ft1 {
+    text-align: left;
+}
+.ft3 ul {
+    list-style-type: none; 
+}
+.ft3 li {
+    margin-bottom: 5px;
+}

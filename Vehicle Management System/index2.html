@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        header {
+            background-color: royalblue;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1%;
+        }
+
+        #logo {
+            margin: 0;
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin-left: 20px;
+            font-size: 20px;
+        }
+
+       .one {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            height: 600px;
+            width: 100%;
+        }
+
+        .flight {
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+        }
+
+        .flightimg ,
+        .flightimg2,
+        .flightimg3,
+        .flightimg4{
+            flex: 1;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 400px;
+            width: 100%;
+        }
+
+        .flightimg{
+            background-image: url('https://www.newbusinessage.com/img/news/20220417083329_Nepal-Airlines-NAC.jpg')  
+        }
+
+        .flightimg2{
+            background-image: url('https://assets-cdn.kathmandupost.com/uploads/source/news/2019/money/A320-(1).jpg');
+        }
+
+        .flightimg3{
+            background-image: url('https://i0.wp.com/techlekh.com/wp-content/uploads/2018/02/boeing-buddha-air.jpg?fit=1000%2C563&ssl=1');
+        }
+
+        .flightimg4{
+            background-image: url('https://cdn.zeebiz.com/sites/default/files/2023/08/19/256870-air-india-reuters.jpg');
+        }
+
+        .flightbutton {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .b1 {
+            width: 163px;
+            border: 2px solid white;
+            background: rgb(82, 82, 241);
+            color: white;
+            font-size: 25px;
+            border-radius: 10px;
+            height: 60px;
+        }
+        .b1 a {
+            text-decoration: none;
+            color: white;
+        }
+        .flightbutton {
+            background: grey;
+            height: 90px;
+        }
+        #cont {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            
+        }
+
+        #cont p {
+            color: #333;
+            font-size: 13px;
+            line-height: 1.6;
+
+        }
+
+        #cont .highlight {
+            color: blue;
+            font-weight: bold;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .ft1 {
+            text-align: left;
+        }
+        .ft3 ul {
+            list-style-type: none; 
+        }
+        .ft3 li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <p id="logo">TourTrekker</p>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="index2.html">Flights</a>
+                <a href="index3.html">Bus</a>
+                <a href="index4.html">Hotels</a>
+                <a href="index5.html">Contact us!</a>
+            </nav>
+        </div>
+    </header>
+    <section id="plane">
+        <h1><center>Available Flights</center></h1>
+        <div class="one">
+            <!--1st flight-->
+            <div class="flight">
+                <h1>*Nepal Airlines</h1>
+                <div class="flightimg"></div>
+                <div class="flightbutton">
+                    <button class="b1"><a href="index6.html">Book!</a></button>
+                </div>
+            </div>
+            <!--2nd flight-->
+            <div class="flight">
+                <h1>*Himalayan Airlines</h1>
+                <div class="flightimg2"></div>
+                <div class="flightbutton">
+                    <button class="b1"><a href="index6.html">Book!</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="one">
+               <!--3rd Flight-->
+               <div class="flight">
+                <h1>*Buddha Air</h1>
+                <div class="flightimg3"></div>
+                <div class="flightbutton">
+                    <button class="b1"><a href="index6.html">Book!</a></button>
+                </div>
+            </div>
+            <!--4th Flight-->
+            <div class="flight">
+                <h1>*Air India</h1>
+                <div class="flightimg4"></div>
+                <div class="flightbutton">
+                    <button class="b1"><a href="index6.html">Book!</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="cont">
+        <p>Popular Flight Sectors: <span class="highlight">Kathmandu to Pokhara Flight| Bharatpur to Kathmandu Flight | Lukla to Kathmandu Flight | Nepalgunj to Kathmandu Flight | Bhairahawa to Kathmandu Flight | Janakpur to Kathmandu Flight | Simara to Kathmandu Flight | Tumlingtar to Kathmandu Flight | Kathmandu to Dhangadhi Flight | Kathmandu to Biratnagar Flight | Kathmandu to Bhadrapur Flight | Kathmandu to Nepalgunj Flight | Pokhara to Bhairahawa Flight | Biratnagar to Nepalgunj Flight | Kathmandu to Simikot Flight | Jomsom to Pokhara Flight | Kathmandu to Lukla Flight | Kathmandu to Bharatpur Flight</span></p>
+        <p>Top Routes :<span class="highlight">Biratnagar to Bharatpur Flight |Kathmandu to Bhutan Flight |Kathmandu to Tibet Flight | Kathmandu to Delhi Flight | Kathmandu to Bangkok Flight |Kathmandu to Dubai Flight |Kathmandu to Doha Flight |Kathmandu to Istanbul Flight | Kathmandu to Kuala Lumpur Flight |Kathmandu to Singapore Flight |Kathmandu to Beijing Flight | Kathmandu to Hong Kong Flight |Kathmandu to Seoul Flight |Kathmandu to Tokyo Flight |Kathmandu to Sydney Flight |Kathmandu to London Flight |Kathmandu to New York Flight |Kathmandu to Toronto Flight | Kathmandu to Los Angeles Flight |Kathmandu to Johannesburg Flight</span></p>
+        <p>Popular Domestic Routes:<span class="highlight">Pokhara to Nepalgunj Flight | Kathmandu to Bhairahawa Flight | Bharatpur to Biratnagar Flight |Lukla to Simara Flight | Nepalgunj to Bhadrapur Flight |Janakpur to Tumlingtar Flight | Simara to Dhangadhi Flight |Tumlingtar to Biratnagar Flight |Kathmandu to Dhangadhi Flight |Kathmandu to Pokhara Flight |Kathmandu to Bharatpur Flight |Kathmandu to Lukla Flight |pokhara to Bhairahawa Flight |Biratnagar to Nepalgunj Flight |Simikot to Lukla Flight |Jomsom to Pokhara Flight | Kathmandu to Ramechhap Flight |Bharatpur to Lukla Flight |Simikot to Nepalgunj Flight |Ramechhap to Bhadrapur Flight</span></p>
+        <p>Top Sectors:<span class="highlight">Kathmandu to Jomsom Flight |Kathmandu to Rara Flight |Pokhara to Simikot Flight |Simara to Lukla Flight |Biratnagar to Tumlingtar Flight |Janakpur to Nepalgunj Flight |Nepalgunj to Simikot Flight |Lukla to Jomsom Flight |Kathmandu to Simikot Flight |Kathmandu to Janakpur Flight |Kathmandu to Nepalgunj Flight |Pokhara to Jomsom Flight |Biratnagar to Lukla Flight | Simikot to Bharatpur Flight |Ramechhap to Tumlingtar Flight |Bhairahawa to Simara Flight |Tumlingtar to Bhadrapur Flight |Jomsom to Simikot Flight |Rara to Simara Flight |Lukla to Nepalgunj Flight</span></p>
+        <p>Top Airline Sectors:<span class="highlight">Kathmandu to Delhi Yeti Airlines Flight |Kathmandu to Bangkok Nepal Airlines Flight |Kathmandu to Dubai Buddha Air Flight |Kathmandu to Istanbul Himalaya Airlines Flight |Kathmandu to Kuala Lumpur Shree Airlines Flight |Kathmandu to Singapore Simrik Airlines Flight |Kathmandu to Beijing Tara Air Flight |Kathmandu to Hong Kong Goma Air Flight |Kathmandu to Seoul Saurya Airlines Flight |Kathmandu to Tokyo Sita Air Flight |Kathmandu to Sydney Yeti Airlines International Flight |Kathmandu to London Buddha Air International Flight |Kathmandu to New York Nepal Airlines International Flight |Kathmandu to Toronto Himalaya Airlines International Flight |Kathmandu to Los Angeles Shree Airlines International Flight |Kathmandu to Johannesburg Simrik Airlines International Flight |Biratnagar to Bharatpur Buddha Air Domestic Flight</span></p>
+        <p>Important Routes:<span class="highlight">Pokhara to Simara Flight |Simara to Lukla Flight |Biratnagar to Tumlingtar Flight |Janakpur to Nepalgunj Flight |Nepalgunj to Simikot Flight |Lukla to Jomsom Flight |Kathmandu to Simikot Flight |Kathmandu to Janakpur Flight |Kathmandu to Nepalgunj Flight |Pokhara to Jomsom Flight |Biratnagar to Lukla Flight |Simikot to Bharatpur Flight |Ramechhap to Tumlingtar Flight |Bhairahawa to Simara Flight |Tumlingtar to Bhadrapur Flight |Jomsom to Simikot Flight |Rara to Simara Flight |Lukla to Nepalgunj Flight |Kathmandu to Jomsom Flight |Kathmandu to Rara Flight</span></p>
+        </div>
+
+        <footer>
+            <div class="ft1">
+                <h3>Contact Us:</h3>
+                <table>
+                    <tr>
+                        <td>Facebook</td>
+                        <td><img width="28" height="28" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new"/></td>
+                    </tr>
+                    <tr>
+                        <td>Twitter</td>
+                        <td><img width="28" height="28" src="https://img.icons8.com/color/48/twitter--v1.png" alt="twitter--v1"/></td>
+                    </tr>
+                    <tr>
+                        <td>Instagram</td>
+                        <td><img width="28" height="28" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1"/></i></td>
+                    </tr>
+                    <tr>
+                        <td>Tiktok</td>
+                        <td><img width="28" height="28" src="https://img.icons8.com/color/48/tiktok--v1.png" alt="tiktok--v1"/></td>
+                    </tr>
+                    <tr>
+                        <td>Viber</td>
+                        <td><img width="28" height="28" src="https://img.icons8.com/color/48/viber.png" alt="viber"/></td>
+                    </tr>
+                </table>
+            </div>
+        
+            <div class="ft2">
+                <h3>
+                &copy VehiSync Squad "All Rights Reserved"
+                </h3>
+            </div>
+            
+        
+            <div class="ft3">
+                <h3>Developers:</h3>
+                <ul>
+                    <li>Awashar Sharma</li>
+                    <li>Dikshit Guragain</li>
+                    <li>Bigyan Pokhrel</li>
+                    <li>Benisha Bhandari</li>
+                </ul>
+            </div>
+        </footer>
+</body>
+
+</html>

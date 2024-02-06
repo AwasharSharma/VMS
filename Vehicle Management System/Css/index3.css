@@ -1,0 +1,125 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    background-color: royalblue;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+}
+
+#logo {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.one {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 600px;
+    width: 100%;
+}
+
+.bus{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.busimg ,
+.busimg2,
+.busimg3,
+.busimg4{
+    flex: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+}
+
+.busimg{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d8/Arriva_The_Shires_3921_BK58_URO.JPG')  
+}
+
+.busimg2{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Van_Hool_ExquiCity_24_METTIS_n%C2%B01315_P%2BR_Woippy.jpg/1280px-Van_Hool_ExquiCity_24_METTIS_n%C2%B01315_P%2BR_Woippy.jpg');
+}
+
+.busimg3{
+    background-image: url('https://www.sustainable-bus.com/wp-content/uploads/2018/10/VDL-Citea-SLF-120-Electric-1-e1528364681265-1024x686.jpg');
+}
+
+.busimg4{
+    background-image: url('https://www.lacharterbuscompany.com/employee/upload/homeBgImg/1697120358small_la-cbc-branded-bus.jpg');
+}
+
+.busbutton {
+    padding: 10px;
+    text-align: center;
+    background: grey;
+    height: 90px;
+}
+
+.b1 {
+    width: 163px;
+    border: 2px solid white;
+    background: rgb(82, 82, 241);
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+    height: 60px;
+}
+.b1 a {
+    text-decoration: none;
+    color: white;
+} 
+#bus-faq h2 {
+color: darkblue;
+font-weight: bold;
+font-size: 2.5rem;
+margin-bottom: 20px;
+}
+
+#bus-faq h3 {
+color: #007bff;
+font-size: 1.8rem;
+margin-top: 15px;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ft1 {
+    text-align: left;
+}
+.ft3 ul {
+    list-style-type: none; 
+}
+.ft3 li {
+    margin-bottom: 5px;
+}

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        header {
+            background-color: royalblue;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1%;
+        }
+
+        #logo {
+            margin: 0;
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin-left: 20px;
+            font-size: 20px;
+        }
+
+       .one {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            height: 600px;
+            width: 100%;
+        }
+
+        .bus{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+        }
+
+        .busimg ,
+        .busimg2,
+        .busimg3,
+        .busimg4{
+            flex: 1;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 400px;
+            width: 100%;
+        }
+
+        .busimg{
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d8/Arriva_The_Shires_3921_BK58_URO.JPG')  
+        }
+
+        .busimg2{
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Van_Hool_ExquiCity_24_METTIS_n%C2%B01315_P%2BR_Woippy.jpg/1280px-Van_Hool_ExquiCity_24_METTIS_n%C2%B01315_P%2BR_Woippy.jpg');
+        }
+
+        .busimg3{
+            background-image: url('https://www.sustainable-bus.com/wp-content/uploads/2018/10/VDL-Citea-SLF-120-Electric-1-e1528364681265-1024x686.jpg');
+        }
+
+        .busimg4{
+            background-image: url('https://www.lacharterbuscompany.com/employee/upload/homeBgImg/1697120358small_la-cbc-branded-bus.jpg');
+        }
+
+        .busbutton {
+            padding: 10px;
+            text-align: center;
+            background: grey;
+            height: 90px;
+        }
+
+        .b1 {
+            width: 163px;
+            border: 2px solid white;
+            background: rgb(82, 82, 241);
+            color: white;
+            font-size: 25px;
+            border-radius: 10px;
+            height: 60px;
+        }
+        .b1 a {
+            text-decoration: none;
+            color: white;
+        } 
+        #bus-faq h2 {
+    color: darkblue;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#bus-faq h3 {
+    color: #007bff;
+    font-size: 1.8rem;
+    margin-top: 15px;
+}
+    footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .ft1 {
+            text-align: left;
+        }
+        .ft3 ul {
+            list-style-type: none; 
+        }
+        .ft3 li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <p id="logo">TourTrekker</p>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="index2.html">Flights</a>
+                <a href="index3.html">Bus</a>
+                <a href="index4.html">Hotels</a>
+                <a href="index5.html">Contact us!</a>
+            </nav>
+        </div>
+    </header>
+    <section id="road">
+        <h1><center>Available Buses</center></h1>
+        <div class="one">
+            <!--1st bus-->
+            <div class="bus">
+                <h1>*Single-deck rigid bus</h1>
+                <div class="busimg"></div>
+                <div class="busbutton">
+                    <button class="b1"><a href="index7.html">Book!</a></button>
+                </div>
+            </div>
+            <!--2nd bus-->
+            <div class="bus">
+                <h1>*Articulated Bus</h1>
+                <div class="busimg2"></div>
+                <div class="busbutton">
+                    <button class="b1"><a href="index7.html">Book!</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="one">
+               <!--3rd bus-->
+               <div class="bus">
+                <h1>*Hybrid Bus</h1>
+                <div class="busimg3"></div>
+                <div class="busbutton">
+                    <button class="b1"><a href="index7.html">Book!</a></button>
+                </div>
+            </div>
+            <!--4th bus-->
+            <div class="bus">
+                <h1>*Tour Bus</h1>
+                <div class="busimg4"></div>
+                <div class="busbutton">
+                    <button class="b1"><a href="index7.html">Book!</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="bus-faq">
+        <h2>Online Bus Booking FAQ</h2>
+    
+        <h3>1. Why should I book bus tickets online?</h3>
+        <p>Online bus booking offers the convenience of selecting preferred seats, avoiding long queues, and accessing various buses with amenities, reviews, and ratings. Additionally, you can benefit from ongoing discounts.</p>
+    
+        <h3>2. Can I book state road transport corporation buses online?</h3>
+        <p>Yes, you can book state road transport corporation buses online, including Deluxe AC and Non-AC buses, as well as Volvo buses.</p>
+    
+        <h3>3. Do I need to carry a printout of the ticket to board the bus?</h3>
+        <p>While bus operators validate e-tickets via email, WhatsApp it is advisable to carry a printout for a hassle-free travel experience.</p>
+    
+        <h3>4. Is a refund provided if I miss the bus?</h3>
+        <p>No, refunds are not initiated if you miss the bus. Refunds are typically provided only if the bus operator cancels the bus without offering an alternate option.</p>
+    
+        <h3>5. How do I book bus tickets online through TourTrekker?</h3>
+        <p>Once,you booked the bus, all the payment details is provided through the email.It will be available for 24hrs only.If your payment is not done,the seat will be booked to another one.</p>
+    
+    
+        <h3>6. Can I choose my preferred seat during the online booking process?</h3>
+        <p>Yes, you can choose your preferred seat during the online booking process. Most online platforms provide a seat selection option for passengers.</p>
+    
+        <h3>7. Are there any additional charges when booking bus tickets online?</h3>
+        <p>While booking online, be aware of any service charges or transaction fees that may apply. Check the payment details before confirming your booking.</p>
+    
+        <h3>8. Can I cancel or modify my bus booking?</h3>
+        <p>The cancellation and modification policies vary among bus operators. Check the terms and conditions during the booking process and review the operator's policies for cancellations or modifications.</p>
+    
+        <h3>9. Is travel insurance available for bus bookings?</h3>
+        <p>Yes, you can protect your journey with travel insurance. During the booking process, you may have the option to purchase travel insurance to cover unexpected events.</p>
+    </div>
+
+
+        <footer>
+            <div class="ft1">
+                <h3>Contact Us:</h3>
+                <table>
+                    <tr>
+                        <td>Facebook</td>
+                        <td><img width="28" height="28" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new"/></td>
+                    </tr>
+                    <tr>
+                        <td>Twitter</td>
+                        <td><img width="28" height="28" src="https://img.icons8.com/color/48/twitter--v1.png" alt="twitter--v1"/></td>
+                    </tr>
+                    <tr>
+                        <td>Instagram</td>
+                        <td><img width="28" height="28" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1"/></i></td>
+                    </tr>
+                    <tr>
+                        <td>Tiktok</td>
+                        <td><img width="28" height="28" src="https://img.icons8.com/color/48/tiktok--v1.png" alt="tiktok--v1"/></td>
+                    </tr>
+                    <tr>
+                        <td>Viber</td>
+                        <td><img width="28" height="28" src="https://img.icons8.com/color/48/viber.png" alt="viber"/></td>
+                    </tr>
+                </table>
+            </div>
+        
+            <div class="ft2">
+                <h3>
+                &copy VehiSync Squad "All Rights Reserved"
+                </h3>
+            </div>
+            
+        
+            <div class="ft3">
+                <h3>Developers:</h3>
+                <ul>
+                    <li>Awashar Sharma</li>
+                    <li>Dikshit Guragain</li>
+                    <li>Bigyan Pokhrel</li>
+                    <li>Benisha Bhandari</li>
+                </ul>
+            </div>
+        </footer>
+</body>
+
+</html>
